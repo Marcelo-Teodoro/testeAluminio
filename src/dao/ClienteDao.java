@@ -16,6 +16,8 @@ import java.util.List;
  */
 public class ClienteDao {
 
+    // Comentário feito por Adonis
+
     public int save(Cliente cliente) throws SQLException, ClassNotFoundException {
 
         //inicializando o retorno da função, caso tenha algum problema deve retornar o valor -1
