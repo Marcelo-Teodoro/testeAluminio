@@ -2,6 +2,11 @@ package classe;
 
 public class Cliente {
 
+    public Cliente(Integer id, String nome) {
+        this.id = id;
+        this.nome = nome;
+    }
+
     private Integer id;
     private String nome;
 
