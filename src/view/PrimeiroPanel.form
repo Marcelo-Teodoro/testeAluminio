@@ -24,10 +24,12 @@
           <grid id="fd0d3" binding="jpTabArquivo" layout-manager="GridLayoutManager" row-count="2" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <tabbedpane title="Arquivo"/>
+              <tabbedpane title=""/>
             </constraints>
             <properties/>
-            <border type="none"/>
+            <border type="bevel-lowered" title="Arquivo" title-justification="2" title-position="2">
+              <font/>
+            </border>
             <children>
               <hspacer id="6923d">
                 <constraints>
@@ -48,6 +50,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <icon value="imgs/perfil_350x350.jpg"/>
                   <text value="Perfil"/>
                 </properties>
               </component>
@@ -61,11 +64,16 @@
                   <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                     <minimum-size width="100" height="100"/>
                     <preferred-size width="100" height="100"/>
-                    <maximum-size width="100" height="100"/>
+                    <maximum-size width="105" height="105"/>
                   </grid>
                 </constraints>
                 <properties>
-                  <text value="Acessório"/>
+                  <borderPainted value="true"/>
+                  <icon value="imgs/acessorio_100x100.jpg"/>
+                  <iconTextGap value="1"/>
+                  <opaque value="false"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="7da38" class="javax.swing.JButton" binding="btnEsquadria">
@@ -77,6 +85,8 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <actionCommand value=""/>
+                  <icon value="imgs/esquadria_620x413.png"/>
                   <text value="Esquadria"/>
                 </properties>
               </component>

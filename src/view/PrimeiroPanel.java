@@ -32,6 +32,7 @@ public class PrimeiroPanel extends JFrame{
         }
 
         JFrame jf = new JFrame();
+        jf.setDefaultCloseOperation(EXIT_ON_CLOSE);
         jf.setContentPane(new PrimeiroPanel().panel1);
         jf.setVisible(true);
         jf.setSize(800,600);
