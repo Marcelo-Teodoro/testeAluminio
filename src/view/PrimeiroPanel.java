@@ -12,7 +12,6 @@ public class PrimeiroPanel extends JFrame{
     private JButton btnEsquadria;
     private JPanel jpTabArquivo;
     private JButton btnContato;
-    private JButton btnOrcamento;
 
     public PrimeiroPanel() {
 
@@ -22,7 +21,7 @@ public class PrimeiroPanel extends JFrame{
                 JFrame jf = new JFrame();
                 jf.setContentPane(new CadastroPerfil().getPerfilFundoPanel());
                 jf.setVisible(true);
-                jf.setSize(800,600);
+                jf.setSize(700,500);
                 jf.setLocationRelativeTo(null);
             }
         });
@@ -51,4 +50,5 @@ public class PrimeiroPanel extends JFrame{
         jf.setSize(800,600);
         jf.setLocationRelativeTo(null);
     }
+
 }
