@@ -10,6 +10,7 @@ public class PrimeiroPanel extends JFrame{
     private JButton btnEsquadria;
     private JPanel jpTabArquivo;
     private JButton btnContato;
+    private JButton btnOrcamento;
 
     public PrimeiroPanel() {
 
