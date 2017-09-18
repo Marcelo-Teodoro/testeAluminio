@@ -2,68 +2,39 @@ package view;
 
 import javax.swing.*;
 
-public class PrimeiroPanel {
+public class PrimeiroPanel extends JFrame{
     private JPanel panel1;
     private JTabbedPane tbdPane;
     private JButton btnPerfil;
     private JButton btnAcessorio;
     private JButton btnEsquadria;
-    private JPanel jPanelTab;
+    private JPanel jpTabArquivo;
     private JButton btnContato;
 
-    public JPanel getPanel1() {
-        return panel1;
+    public PrimeiroPanel() {
+
     }
 
-    public void setPanel1(JPanel panel1) {
-        this.panel1 = panel1;
-    }
+    public static void main(String[] args) {
 
-    public JTabbedPane getTbdPane() {
-        return tbdPane;
-    }
+        try {
 
-    public void setTbdPane(JTabbedPane tbdPane) {
-        this.tbdPane = tbdPane;
-    }
+            for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                } else {
+                    UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Sem nimbus");
+        }
 
-    public JButton getBtnPerfil() {
-        return btnPerfil;
-    }
-
-    public void setBtnPerfil(JButton btnPerfil) {
-        this.btnPerfil = btnPerfil;
-    }
-
-    public JButton getBtnAcessorio() {
-        return btnAcessorio;
-    }
-
-    public void setBtnAcessorio(JButton btnAcessorio) {
-        this.btnAcessorio = btnAcessorio;
-    }
-
-    public JButton getBtnEsquadria() {
-        return btnEsquadria;
-    }
-
-    public void setBtnEsquadria(JButton btnEsquadria) {
-        this.btnEsquadria = btnEsquadria;
-    }
-
-    public JPanel getjPanelTab() {
-        return jPanelTab;
-    }
-
-    public void setjPanelTab(JPanel jPanelTab) {
-        this.jPanelTab = jPanelTab;
-    }
-
-    public JButton getBtnContato() {
-        return btnContato;
-    }
-
-    public void setBtnContato(JButton btnContato) {
-        this.btnContato = btnContato;
+        JFrame jf = new JFrame();
+        jf.setContentPane(new PrimeiroPanel().panel1);
+        jf.setVisible(true);
+        jf.setSize(800,600);
+        jf.setLocationRelativeTo(null);
     }
 }
