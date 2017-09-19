@@ -1,8 +1,13 @@
 package view;
 
+import classe.Fornecedor;
+import classe.Perfil;
+import model.PerfilTableModel;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class PrimeiroPanel extends JFrame{
     private JPanel panel1;
@@ -12,6 +17,8 @@ public class PrimeiroPanel extends JFrame{
     private JButton btnEsquadria;
     private JPanel jpTabArquivo;
     private JButton btnContato;
+    CadastroPerfil cadastroPerfil;
+
 
     public PrimeiroPanel() {
 
@@ -50,5 +57,6 @@ public class PrimeiroPanel extends JFrame{
         jf.setSize(800,600);
         jf.setLocationRelativeTo(null);
     }
+
 
 }
