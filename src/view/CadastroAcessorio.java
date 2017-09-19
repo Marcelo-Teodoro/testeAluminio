@@ -83,6 +83,8 @@ public class CadastroAcessorio {
         this.jtbTabelaAcessorio.getColumnModel().getColumn(3).setCellRenderer(cellRender);
         this.jtbTabelaAcessorio.getColumnModel().getColumn(4).setHeaderRenderer(cellRenderTitle);
         this.jtbTabelaAcessorio.getColumnModel().getColumn(4).setCellRenderer(cellRender);
+        this.jtbTabelaAcessorio.getColumnModel().getColumn(5).setHeaderRenderer(cellRenderTitle);
+        this.jtbTabelaAcessorio.getColumnModel().getColumn(5).setCellRenderer(cellRender);
 
     }
 
