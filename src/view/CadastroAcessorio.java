@@ -2,6 +2,7 @@ package view;
 
 import classe.Acessorio;
 import classe.Fornecedor;
+import model.AcessorioTableModel;
 import model.PerfilTableModel;
 
 import javax.swing.*;
@@ -19,7 +20,7 @@ public class CadastroAcessorio {
     private JTextField textField4;
     private JTextField textField5;
     private JTextField textField7;
-    private JTable jtbTabelaPerfil;
+    private JTable jtbTabelaAcessorio;
     private JTextField textField3;
     private JButton cancelarButton;
     private JButton salvarButton;
@@ -31,7 +32,7 @@ public class CadastroAcessorio {
 
 
     public void setJtbTabelaPerfil(JTable jtbTabelaPerfil) {
-        this.jtbTabelaPerfil = jtbTabelaPerfil;
+        this.jtbTabelaAcessorio = jtbTabelaAcessorio;
     }
 
     public CadastroAcessorio() {
@@ -58,30 +59,30 @@ public class CadastroAcessorio {
         for (int i = 0; i < 10; i++) {
             acessorioLista.add(new Acessorio(1, (Fornecedor) fornecedoresLista.get(2), "MC67", "Descrição", "CX", 2.50, 5));
             acessorioLista.add(new Acessorio(2, (Fornecedor) fornecedoresLista.get(1), "MC34", "Descrição", "CX", 2.50, 5));
-            acessorioLista.add(new Acessorio(4, (Fornecedor) fornecedoresLista.get(1), "MNJC67", "Descrição", "CX", 2.50, 5));
+            acessorioLista.add(new Acessorio(4, (Fornecedor) fornecedoresLista.get(0), "MNJC67", "Descrição", "CX", 2.50, 5));
             acessorioLista.add(new Acessorio(5, (Fornecedor) fornecedoresLista.get(1), "MC6907", "Descrição", "CX", 2.50, 5));
-            acessorioLista.add(new Acessorio(6, (Fornecedor) fornecedoresLista.get(4), "KLMC67", "Descrição", "CX", 2.50, 5));
+            acessorioLista.add(new Acessorio(6, (Fornecedor) fornecedoresLista.get(0), "KLMC67", "Descrição", "CX", 2.50, 5));
             acessorioLista.add(new Acessorio(7, (Fornecedor) fornecedoresLista.get(3), "MCJ67", "Descrição", "CX", 2.50, 5));
             acessorioLista.add(new Acessorio(8, (Fornecedor) fornecedoresLista.get(2), "MCC867", "Descrição", "CX", 2.50, 5));
             acessorioLista.add(new Acessorio(9, (Fornecedor) fornecedoresLista.get(3), "LMC67", "Descrição", "CX", 2.50, 5));
             acessorioLista.add(new Acessorio(10, (Fornecedor) fornecedoresLista.get(2), "NKMC67", "Descrição", "CX", 2.50, 5));
         }
 
-        PerfilTableModel model = new PerfilTableModel();
-        model.setListaPerfil(acessorioLista);
-        jtbTabelaPerfil.setModel(model);
+        AcessorioTableModel model = new AcessorioTableModel();
+        model.setListaAcessorio(acessorioLista);
+        jtbTabelaAcessorio.setModel(model);
         //scrollPane = new JScrollPane(jtbTabelaPerfil);
 
-        this.jtbTabelaPerfil.getColumnModel().getColumn(0).setHeaderRenderer(cellRenderTitle);
-        this.jtbTabelaPerfil.getColumnModel().getColumn(0).setCellRenderer(cellRender);
-        this.jtbTabelaPerfil.getColumnModel().getColumn(1).setHeaderRenderer(cellRenderTitle);
-        this.jtbTabelaPerfil.getColumnModel().getColumn(1).setCellRenderer(cellRender);
-        this.jtbTabelaPerfil.getColumnModel().getColumn(2).setHeaderRenderer(cellRenderTitle);
-        this.jtbTabelaPerfil.getColumnModel().getColumn(2).setCellRenderer(cellRender);
-        this.jtbTabelaPerfil.getColumnModel().getColumn(3).setHeaderRenderer(cellRenderTitle);
-        this.jtbTabelaPerfil.getColumnModel().getColumn(3).setCellRenderer(cellRender);
-        this.jtbTabelaPerfil.getColumnModel().getColumn(4).setHeaderRenderer(cellRenderTitle);
-        this.jtbTabelaPerfil.getColumnModel().getColumn(4).setCellRenderer(cellRender);
+        this.jtbTabelaAcessorio.getColumnModel().getColumn(0).setHeaderRenderer(cellRenderTitle);
+        this.jtbTabelaAcessorio.getColumnModel().getColumn(0).setCellRenderer(cellRender);
+        this.jtbTabelaAcessorio.getColumnModel().getColumn(1).setHeaderRenderer(cellRenderTitle);
+        this.jtbTabelaAcessorio.getColumnModel().getColumn(1).setCellRenderer(cellRender);
+        this.jtbTabelaAcessorio.getColumnModel().getColumn(2).setHeaderRenderer(cellRenderTitle);
+        this.jtbTabelaAcessorio.getColumnModel().getColumn(2).setCellRenderer(cellRender);
+        this.jtbTabelaAcessorio.getColumnModel().getColumn(3).setHeaderRenderer(cellRenderTitle);
+        this.jtbTabelaAcessorio.getColumnModel().getColumn(3).setCellRenderer(cellRender);
+        this.jtbTabelaAcessorio.getColumnModel().getColumn(4).setHeaderRenderer(cellRenderTitle);
+        this.jtbTabelaAcessorio.getColumnModel().getColumn(4).setCellRenderer(cellRender);
 
     }
 
