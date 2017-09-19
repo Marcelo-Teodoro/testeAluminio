@@ -7,16 +7,26 @@ public class Fornecedor {
     private String telefone;
     private String email;
     private String observacao;
+    private Double valorPesoAluminio;
 
     public Fornecedor() {
     }
 
-    public Fornecedor(Integer idFornecedor, String empresa, String telefone, String email, String observacao) {
-        this.empresa = empresa;
+    public Fornecedor(Integer idFornecedor, String empresa, String telefone, String email, String observacao, Double valorPesoAluminio) {
         this.idFornecedor = idFornecedor;
+        this.empresa = empresa;
         this.telefone = telefone;
         this.email = email;
         this.observacao = observacao;
+        this.valorPesoAluminio = valorPesoAluminio;
+    }
+
+    public Double getValorPesoAluminio() {
+        return valorPesoAluminio;
+    }
+
+    public void setValorPesoAluminio(Double valorPesoAluminio) {
+        this.valorPesoAluminio = valorPesoAluminio;
     }
 
     public Integer getIdFornecedor() {
@@ -61,6 +71,13 @@ public class Fornecedor {
 
     @Override
     public String toString() {
-        return empresa;
+        return "Fornecedor{" +
+                "idFornecedor=" + idFornecedor +
+                ", empresa='" + empresa + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", email='" + email + '\'' +
+                ", observacao='" + observacao + '\'' +
+                ", valorPesoAluminio=" + valorPesoAluminio +
+                '}';
     }
 }

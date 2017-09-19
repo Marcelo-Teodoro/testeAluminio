@@ -36,7 +36,7 @@ public class PerfilTableModel extends AbstractTableModel {
 
         @Override
         public int getColumnCount() {
-            return 6;
+            return 7;
         }
 
         @Override
@@ -49,7 +49,7 @@ public class PerfilTableModel extends AbstractTableModel {
             }
 
             if (columnIndex == 1) {
-                valor = String.valueOf(listaPerfil.get(rowIndex).getFonecedor().getEmpresa());
+                valor = String.valueOf(listaPerfil.get(rowIndex).getFornecedor().getEmpresa());
             }
 
             if (columnIndex == 2) {
@@ -66,6 +66,10 @@ public class PerfilTableModel extends AbstractTableModel {
 
             if (columnIndex == 5) {
                 valor = String.valueOf(listaPerfil.get(rowIndex).getDescricao());
+            }
+
+            if (columnIndex == 6) {
+                valor = String.valueOf(listaPerfil.get(rowIndex).getFornecedor().getValorPesoAluminio());
             }
 
             return valor;
@@ -97,6 +101,10 @@ public class PerfilTableModel extends AbstractTableModel {
 
             if (column == 5) {
                 valor = "Descrição";
+            }
+
+            if (column == 6) {
+                valor = "Valor Alumínio";
             }
 
             return valor;

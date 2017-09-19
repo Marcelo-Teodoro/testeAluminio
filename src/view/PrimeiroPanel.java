@@ -28,7 +28,7 @@ public class PrimeiroPanel extends JFrame{
                 JFrame jf = new JFrame();
                 jf.setContentPane(new CadastroPerfil().getPerfilFundoPanel());
                 jf.setVisible(true);
-                jf.setSize(700,500);
+                jf.setSize(800,600);
                 jf.setLocationRelativeTo(null);
             }
         });

@@ -1,5 +1,4 @@
 package view;
-
 import classe.Fornecedor;
 import classe.Perfil;
 import model.PerfilTableModel;
@@ -23,6 +22,8 @@ public class CadastroPerfil {
     private JButton salvarButton;
     private JButton cancelarButton;
     private JTable jtbTabelaPerfil;
+    private JTextField textField8;
+    private JTextField textField9;
     //private JScrollPane scrollPane;
     ArrayList fornecedoresLista;
     ArrayList perfilLista;
@@ -49,10 +50,10 @@ public class CadastroPerfil {
 
         System.out.println("Passei" );
         fornecedoresLista = new ArrayList();
-        fornecedoresLista.add(new Fornecedor(1,"Alcoa","99995-8547","qwe1d1a@a.com", "Obs"));
-        fornecedoresLista.add(new Fornecedor(2,"Inova","99888-9998","asda4a@hotmail.com", "Obs"));
-        fornecedoresLista.add(new Fornecedor(3,"Soluta","98544-7777","asdaa@a5gg.com", "Obs"));
-        fornecedoresLista.add(new Fornecedor(4,"Linha Master","98577-5999","aasa@com.gg", "Obs"));
+        fornecedoresLista.add(new Fornecedor(1,"Alcoa","99995-8547","qwe1d1a@a.com", "Obs", 1.50));
+        fornecedoresLista.add(new Fornecedor(2,"Inova","99888-9998","asda4a@hotmail.com", "Obs", 1.78));
+        fornecedoresLista.add(new Fornecedor(3,"Soluta","98544-7777","asdaa@a5gg.com", "Obs", 22.50));
+        fornecedoresLista.add(new Fornecedor(4,"Linha Master","98577-5999","aasa@com.gg", "Obs", 26.00));
 
         perfilLista = new ArrayList();
 

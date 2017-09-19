@@ -8,7 +8,7 @@ public class Perfil {
     private Double peso;
     private Double tamanho;
     private String descricao;
-    private Fornecedor fonecedor;
+    private Fornecedor fornecedor;
 
     public Perfil() {
     }
@@ -20,7 +20,7 @@ public class Perfil {
         this.peso = peso;
         this.tamanho = tamanho;
         this.descricao = descricao;
-        this.fonecedor = fonecedor;
+        this.fornecedor = fonecedor;
     }
 
     public String getCodigo() {
@@ -31,12 +31,12 @@ public class Perfil {
         this.codigo = codigo;
     }
 
-    public Fornecedor getFonecedor() {
-        return fonecedor;
+    public Fornecedor getFornecedor() {
+        return fornecedor;
     }
 
-    public void setFonecedor(Fornecedor fonecedor) {
-        this.fonecedor = fonecedor;
+    public void setFornecedor(Fornecedor fonecedor) {
+        this.fornecedor = fonecedor;
     }
 
     public Integer getIdPerfil() {
@@ -88,7 +88,7 @@ public class Perfil {
                 ", peso=" + peso +
                 ", tamanho=" + tamanho +
                 ", descricao='" + descricao + '\'' +
-                ", fonecedor=" + fonecedor +
+                ", fonecedor=" + fornecedor +
                 '}';
     }
 }

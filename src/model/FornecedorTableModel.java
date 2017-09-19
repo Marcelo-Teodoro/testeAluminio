@@ -37,7 +37,7 @@ public class FornecedorTableModel extends AbstractTableModel {
 
         @Override
         public int getColumnCount() {
-            return 4;
+            return 5;
         }
 
         @Override
@@ -61,6 +61,10 @@ public class FornecedorTableModel extends AbstractTableModel {
                 valor = String.valueOf(listaFornecedor.get(rowIndex).getObservacao());
             }
 
+            if (columnIndex == 4) {
+                valor = String.valueOf(listaFornecedor.get(rowIndex).getValorPesoAluminio());
+            }
+
             return valor;
         }
 
@@ -82,6 +86,10 @@ public class FornecedorTableModel extends AbstractTableModel {
 
             if (column == 3) {
                 valor = "Observação";
+            }
+
+            if (column == 4) {
+                valor = "Preço Alumínio";
             }
 
             return valor;
