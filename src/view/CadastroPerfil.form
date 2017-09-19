@@ -7,7 +7,7 @@
     </constraints>
     <properties>
       <autoscrolls value="true"/>
-      <maximumSize width="800" height="600"/>
+      <maximumSize width="1366" height="768"/>
       <minimumSize width="800" height="600"/>
       <preferredSize width="800" height="600"/>
     </properties>

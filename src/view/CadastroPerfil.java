@@ -58,26 +58,26 @@ public class CadastroPerfil {
 
         for (int i = 0; i < 10; i++) {
 
-            perfilLista.add(new Perfil(1, "W", 9.1, 1.500, "Aqui vai a descrição? iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii", (Fornecedor) fornecedoresLista.get(1)));
-            perfilLista.add(new Perfil(2, "T", 4.5, 7.100, "Sim!", (Fornecedor) fornecedoresLista.get(3)));
-            perfilLista.add(new Perfil(3, "F", 7.2, 2.000, "Ah tá!", (Fornecedor) fornecedoresLista.get(0)));
-            perfilLista.add(new Perfil(4, "M", 5.3, 4.600, "Humm", (Fornecedor) fornecedoresLista.get(2)));
-            perfilLista.add(new Perfil(1, "W", 9.1, 1.500, "Aqui vai a descrição?", (Fornecedor) fornecedoresLista.get(1)));
-            perfilLista.add(new Perfil(2, "T", 4.5, 7.100, "Sim!", (Fornecedor) fornecedoresLista.get(3)));
-            perfilLista.add(new Perfil(3, "F", 7.2, 2.000, "Ah tá!", (Fornecedor) fornecedoresLista.get(0)));
-            perfilLista.add(new Perfil(4, "M", 5.3, 4.600, "Humm", (Fornecedor) fornecedoresLista.get(2)));
-            perfilLista.add(new Perfil(1, "W", 9.1, 1.500, "Aqui vai a descrição?", (Fornecedor) fornecedoresLista.get(1)));
-            perfilLista.add(new Perfil(2, "T", 4.5, 7.100, "Sim!", (Fornecedor) fornecedoresLista.get(3)));
-            perfilLista.add(new Perfil(3, "F", 7.2, 2.000, "Ah tá!", (Fornecedor) fornecedoresLista.get(0)));
-            perfilLista.add(new Perfil(4, "M", 5.3, 4.600, "Humm", (Fornecedor) fornecedoresLista.get(2)));
-            perfilLista.add(new Perfil(1, "W", 9.1, 1.500, "Aqui vai a descrição?", (Fornecedor) fornecedoresLista.get(1)));
-            perfilLista.add(new Perfil(2, "T", 4.5, 7.100, "Sim!", (Fornecedor) fornecedoresLista.get(3)));
-            perfilLista.add(new Perfil(3, "F", 7.2, 2.000, "Ah tá!", (Fornecedor) fornecedoresLista.get(0)));
-            perfilLista.add(new Perfil(4, "M", 5.3, 4.600, "Humm", (Fornecedor) fornecedoresLista.get(2)));
-            perfilLista.add(new Perfil(1, "W", 9.1, 1.500, "Aqui vai a descrição?", (Fornecedor) fornecedoresLista.get(1)));
-            perfilLista.add(new Perfil(2, "T", 4.5, 7.100, "Sim!", (Fornecedor) fornecedoresLista.get(3)));
-            perfilLista.add(new Perfil(3, "F", 7.2, 2.000, "Ah tá!", (Fornecedor) fornecedoresLista.get(0)));
-            perfilLista.add(new Perfil(4, "M", 5.3, 4.600, "Humm", (Fornecedor) fornecedoresLista.get(2)));
+            perfilLista.add(new Perfil(1, "P45", "W", 9.1, 1.500, "Aqui vai a descrição? iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii", (Fornecedor) fornecedoresLista.get(1)));
+            perfilLista.add(new Perfil(2, "P45", "T", 4.5, 7.100, "Sim!", (Fornecedor) fornecedoresLista.get(3)));
+            perfilLista.add(new Perfil(3, "P45", "F", 7.2, 2.000, "Ah tá!", (Fornecedor) fornecedoresLista.get(0)));
+            perfilLista.add(new Perfil(4, "P45", "M", 5.3, 4.600, "Humm", (Fornecedor) fornecedoresLista.get(2)));
+            perfilLista.add(new Perfil(1, "P45", "A", 9.1, 1.500, "Aqui vai a descrição?", (Fornecedor) fornecedoresLista.get(1)));
+            perfilLista.add(new Perfil(2, "P45", "N", 4.5, 7.100, "Sim!", (Fornecedor) fornecedoresLista.get(3)));
+            perfilLista.add(new Perfil(3, "P45", "F", 7.2, 2.000, "Ah tá!", (Fornecedor) fornecedoresLista.get(0)));
+            perfilLista.add(new Perfil(4, "P45", "M", 5.3, 4.600, "Humm", (Fornecedor) fornecedoresLista.get(2)));
+            perfilLista.add(new Perfil(1, "P45", "W", 9.1, 1.500, "Aqui vai a descrição?", (Fornecedor) fornecedoresLista.get(1)));
+            perfilLista.add(new Perfil(2, "P45", "T", 4.5, 7.100, "Sim!", (Fornecedor) fornecedoresLista.get(3)));
+            perfilLista.add(new Perfil(3, "P45", "F", 7.2, 2.000, "Ah tá!", (Fornecedor) fornecedoresLista.get(0)));
+            perfilLista.add(new Perfil(4, "P45", "M", 5.3, 4.600, "Humm", (Fornecedor) fornecedoresLista.get(2)));
+            perfilLista.add(new Perfil(1, "P45", "W", 9.1, 1.500, "Aqui vai a descrição?", (Fornecedor) fornecedoresLista.get(1)));
+            perfilLista.add(new Perfil(2, "P45", "T", 4.5, 7.100, "Sim!", (Fornecedor) fornecedoresLista.get(3)));
+            perfilLista.add(new Perfil(3, "P45", "F", 7.2, 2.000, "Ah tá!", (Fornecedor) fornecedoresLista.get(0)));
+            perfilLista.add(new Perfil(4, "P45", "M", 5.3, 4.600, "Humm", (Fornecedor) fornecedoresLista.get(2)));
+            perfilLista.add(new Perfil(1, "P45", "W", 9.1, 1.500, "Aqui vai a descrição?", (Fornecedor) fornecedoresLista.get(1)));
+            perfilLista.add(new Perfil(2, "P45", "T", 4.5, 7.100, "Sim!", (Fornecedor) fornecedoresLista.get(3)));
+            perfilLista.add(new Perfil(3, "P45", "F", 7.2, 2.000, "Ah tá!", (Fornecedor) fornecedoresLista.get(0)));
+            perfilLista.add(new Perfil(4, "P45", "M", 5.3, 4.600, "Humm", (Fornecedor) fornecedoresLista.get(2)));
         }
 
         PerfilTableModel model = new PerfilTableModel();

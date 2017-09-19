@@ -36,7 +36,7 @@ public class PerfilTableModel extends AbstractTableModel {
 
         @Override
         public int getColumnCount() {
-            return 5;
+            return 6;
         }
 
         @Override
@@ -45,22 +45,26 @@ public class PerfilTableModel extends AbstractTableModel {
             String valor = "";
 
             if (columnIndex == 0) {
-                valor = String.valueOf(listaPerfil.get(rowIndex).getFonecedor().getEmpresa());
+                valor = String.valueOf(listaPerfil.get(rowIndex).getCodigo());
             }
 
             if (columnIndex == 1) {
-                valor = String.valueOf(listaPerfil.get(rowIndex).getTipo());
+                valor = String.valueOf(listaPerfil.get(rowIndex).getFonecedor().getEmpresa());
             }
 
             if (columnIndex == 2) {
-                valor = String.valueOf(listaPerfil.get(rowIndex).getPeso());
+                valor = String.valueOf(listaPerfil.get(rowIndex).getTipo());
             }
 
             if (columnIndex == 3) {
-                valor = String.valueOf(listaPerfil.get(rowIndex).getTamanho());
+                valor = String.valueOf(listaPerfil.get(rowIndex).getPeso());
             }
 
             if (columnIndex == 4) {
+                valor = String.valueOf(listaPerfil.get(rowIndex).getTamanho());
+            }
+
+            if (columnIndex == 5) {
                 valor = String.valueOf(listaPerfil.get(rowIndex).getDescricao());
             }
 
@@ -72,22 +76,26 @@ public class PerfilTableModel extends AbstractTableModel {
             String valor = "";
 
             if (column == 0) {
-                valor = "Fornecedor";
+                valor = "Código";
             }
 
             if (column == 1) {
-                valor = "Tipo";
+                valor = "Fornecedor";
             }
 
             if (column == 2) {
-                valor = "Peso";
+                valor = "Tipo";
             }
 
             if (column == 3) {
-                valor = "Tamanho";
+                valor = "Peso";
             }
 
             if (column == 4) {
+                valor = "Tamanho";
+            }
+
+            if (column == 5) {
                 valor = "Descrição";
             }
 

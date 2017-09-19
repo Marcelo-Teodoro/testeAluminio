@@ -3,6 +3,7 @@ package classe;
 public class Perfil {
 
     private Integer idPerfil;
+    private String codigo;
     private String tipo;
     private Double peso;
     private Double tamanho;
@@ -12,13 +13,22 @@ public class Perfil {
     public Perfil() {
     }
 
-    public Perfil(Integer idPerfil, String tipo, Double peso, Double tamanho, String descricao, Fornecedor fonecedor) {
+    public Perfil(Integer idPerfil, String codigo, String tipo, Double peso, Double tamanho, String descricao, Fornecedor fonecedor) {
         this.idPerfil = idPerfil;
+        this.codigo = codigo;
         this.tipo = tipo;
         this.peso = peso;
         this.tamanho = tamanho;
         this.descricao = descricao;
         this.fonecedor = fonecedor;
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
     public Fornecedor getFonecedor() {
@@ -73,6 +83,7 @@ public class Perfil {
     public String toString() {
         return "Perfil{" +
                 "idPerfil=" + idPerfil +
+                ", Codigo=" + codigo +
                 ", tipo='" + tipo + '\'' +
                 ", peso=" + peso +
                 ", tamanho=" + tamanho +
