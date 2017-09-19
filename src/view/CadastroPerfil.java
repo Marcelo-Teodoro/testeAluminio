@@ -28,14 +28,6 @@ public class CadastroPerfil {
     ArrayList fornecedoresLista;
     ArrayList perfilLista;
 
-    public JTable getJtbTabelaPerfil() {
-        return jtbTabelaPerfil;
-    }
-
-    public void setJtbTabelaPerfil(JTable jtbTabelaPerfil) {
-        this.jtbTabelaPerfil = jtbTabelaPerfil;
-    }
-
     public CadastroPerfil() {
         testePopulaTable();
     }
@@ -96,7 +88,20 @@ public class CadastroPerfil {
         this.jtbTabelaPerfil.getColumnModel().getColumn(3).setCellRenderer(cellRender);
         this.jtbTabelaPerfil.getColumnModel().getColumn(4).setHeaderRenderer(cellRenderTitle);
         this.jtbTabelaPerfil.getColumnModel().getColumn(4).setCellRenderer(cellRender);
+        this.jtbTabelaPerfil.getColumnModel().getColumn(5).setHeaderRenderer(cellRenderTitle);
+        this.jtbTabelaPerfil.getColumnModel().getColumn(5).setCellRenderer(cellRender);
+        this.jtbTabelaPerfil.getColumnModel().getColumn(6).setHeaderRenderer(cellRenderTitle);
+        this.jtbTabelaPerfil.getColumnModel().getColumn(6).setCellRenderer(cellRender);
 
+    }
+
+
+    public JTable getJtbTabelaPerfil() {
+        return jtbTabelaPerfil;
+    }
+
+    public void setJtbTabelaPerfil(JTable jtbTabelaPerfil) {
+        this.jtbTabelaPerfil = jtbTabelaPerfil;
     }
 
     public JPanel getPerfilFundoPanel() {

@@ -17,6 +17,7 @@ public class PrimeiroPanel extends JFrame{
     private JButton btnEsquadria;
     private JPanel jpTabArquivo;
     private JButton btnContato;
+    private JButton btnFornecedor;
     CadastroPerfil cadastroPerfil;
 
 
@@ -27,6 +28,16 @@ public class PrimeiroPanel extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 JFrame jf = new JFrame();
                 jf.setContentPane(new CadastroPerfil().getPerfilFundoPanel());
+                jf.setVisible(true);
+                jf.setSize(800,600);
+                jf.setLocationRelativeTo(null);
+            }
+        });
+        btnFornecedor.addActionListener(new ActionListener( ) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame jf = new JFrame();
+                jf.setContentPane(new CadastroFornecedor().getFornecedorFundoPanel());
                 jf.setVisible(true);
                 jf.setSize(800,600);
                 jf.setLocationRelativeTo(null);
