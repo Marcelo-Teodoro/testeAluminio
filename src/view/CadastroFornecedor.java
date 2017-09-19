@@ -26,6 +26,8 @@ public class CadastroFornecedor {
     public CadastroFornecedor() {
         testePopulaTable();
     }
+    //coments
+
 
     public void testePopulaTable(){
         DefaultTableCellRenderer cellRender = new DefaultTableCellRenderer();
