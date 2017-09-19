@@ -32,6 +32,19 @@ public class PrimeiroPanel extends JFrame{
                 jf.setLocationRelativeTo(null);
             }
         });
+
+        // Ação do botão para cadastrar Acessório
+        btnAcessorio.addActionListener(new ActionListener( ) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame jf = new JFrame();
+                jf.setContentPane(new CadastroAcessorio().getAcessorioFundoPanel());
+                jf.setVisible(true);
+                jf.setSize(800,600);
+                jf.setLocationRelativeTo(null);
+            }
+        });
+
     }
 
     public static void main(String[] args) {

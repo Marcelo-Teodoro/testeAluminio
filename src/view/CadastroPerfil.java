@@ -28,9 +28,7 @@ public class CadastroPerfil {
     ArrayList fornecedoresLista;
     ArrayList perfilLista;
 
-    public JTable getJtbTabelaPerfil() {
-        return jtbTabelaPerfil;
-    }
+
 
     public void setJtbTabelaPerfil(JTable jtbTabelaPerfil) {
         this.jtbTabelaPerfil = jtbTabelaPerfil;
