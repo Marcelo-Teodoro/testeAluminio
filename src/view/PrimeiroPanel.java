@@ -5,8 +5,7 @@ import classe.Perfil;
 import model.PerfilTableModel;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.util.ArrayList;
 
 public class PrimeiroPanel extends JFrame{
@@ -18,6 +17,8 @@ public class PrimeiroPanel extends JFrame{
     private JPanel jpTabArquivo;
     private JButton btnContato;
     private JButton btnFornecedor;
+    private JPanel jpTabOrcamento;
+    private JButton btnCadastrarOrcamento;
     CadastroPerfil cadastroPerfil;
 
 
@@ -56,6 +57,16 @@ public class PrimeiroPanel extends JFrame{
             }
         });
 
+        btnCadastrarOrcamento.addActionListener(new ActionListener( ) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame jf = new JFrame();
+                jf.setContentPane(new CadastroOrcamento().getOrcamentoFundoPanel());
+                jf.setVisible(true);
+                jf.setSize(800,600);
+                jf.setLocationRelativeTo(null);
+            }
+        });
     }
 
     public static void main(String[] args) {
