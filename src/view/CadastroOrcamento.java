@@ -2,6 +2,7 @@ package view;
 
 import classe.Fornecedor;
 import classe.Perfil;
+import model.OrcamentoTableModel;
 import model.PerfilTableModel;
 
 import javax.swing.*;
@@ -39,8 +40,8 @@ public class CadastroOrcamento {
         listaOrcamento = new ArrayList();
 
 
-        PerfilTableModel model = new PerfilTableModel();
-        model.setListaPerfil(listaOrcamento);
+        OrcamentoTableModel model = new OrcamentoTableModel();
+        model.setListaOrcamento(listaOrcamento);
         jtbTabelaOrcamento.setModel(model);
         //scrollPane = new JScrollPane(jtbTabelaOrcamento);
 

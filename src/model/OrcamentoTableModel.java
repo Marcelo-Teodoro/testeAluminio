@@ -37,7 +37,7 @@ public class OrcamentoTableModel extends AbstractTableModel{
 
     @Override
     public int getColumnCount() {
-        return 4;
+        return 7;
     }
 
     @Override
