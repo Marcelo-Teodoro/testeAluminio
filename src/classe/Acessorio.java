@@ -9,7 +9,7 @@ public class Acessorio {
     private String codigo;
     private String descricao;
     private String unidade;
-    private Double preco;
+    private Double preco; //Em processo de implantação, mudar para precoUnitario
     private Integer quantidade;
 
     public Acessorio() {
